@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "name": "mindmap",
+      "description": "Generate mindmap JSON with node-graph layout using /mindmap <topic>",
+      "source": "./"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mindmap",
+  "version": "1.0.0",
+  "description": "Generate mindmap JSON with node-graph layout using /mindmap command",
+  "skills": [
+    {
+      "name": "mindmap",
+      "path": "SKILL.md",
+      "triggers": ["/mindmap"]
+    }
+  ],
+  "commands": [
+    {
+      "name": "mindmap",
+      "description": "Generate a mindmap as structured JSON. Usage: /mindmap <topic>",
+      "skill": "mindmap"
+    }
+  ]
+}
