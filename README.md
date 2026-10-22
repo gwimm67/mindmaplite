@@ -2,10 +2,11 @@
 
 Generates structured mindmap JSON files with a node-graph layout on `/mindmap` command.
 
-## Install (Claude Code)
+## Install
 
 ```bash
-cp -r .claude-plugin/ ~/.claude/plugins/mindmap/
+/plugin marketplace add gwimm67/mindmaplite
+/plugin install mindmap@mindmaplite
 ```
 
 ## Usage
@@ -16,20 +17,16 @@ cp -r .claude-plugin/ ~/.claude/plugins/mindmap/
 /mindmap My Startup Idea
 ```
 
-Claude outputs JSON matching the node-graph schema with:
-- Nodes: id, text, x/y coordinates, color, notes, image_path, important
-- Edges: id, src, dst, label
-- Radial tree layout (no overlapping nodes)
-
-## Community Marketplace
-
-```bash
-/plugin marketplace add anthropics/claude-plugins-community
-/plugin install mindmap@claude-community
-```
+Claude outputs JSON with:
+- Nodes: `id`, `text`, `x/y` coords, `color`, `notes`, `image_path`, `important`
+- Edges: `id`, `src`, `dst`, `label`
+- Radial tree layout, no overlapping nodes
 
 ## Submit to Official Directory
 
-1. Push this repo to GitHub (public)
-2. Run: claude plugin validate ./
-3. Submit at: claude.com/resources/articles/build-plugins-for-claude
+1. `claude plugin validate ./`
+2. Submit at: https://claude.com/resources/articles/build-plugins-for-claude
+
+## License
+
+MIT
